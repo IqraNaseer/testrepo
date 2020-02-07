@@ -45,7 +45,7 @@ def inquiry(request):
         em = request.POST['email']
         com = request.POST['company']
         body = message + " " + em + " " + com +" " + tie
-        send_mail("contact form",body,settings.EMAIL_HOST_USER,["raengineeringsolution@gmail.com"],fail_silently=False)
+        send_mail("Inquiry form",body,settings.EMAIL_HOST_USER,["raengineeringsolution@gmail.com"],fail_silently=False)
     return render(request, 'inquiry.html')
 
 def about(request):

@@ -35,9 +35,21 @@ margin-top: 0px;
 }
 
 body .no-padding{
-padding-left: 0,
-padding-right: 0;
+padding-left: 0px,
+padding-right: 0px;
 }
+
+@media screen and (max-width: 500px)
+{
+ 
+  .container{
+    width: 100%;
+  }
+
+}
+
+
+
  {% endblock %}
 
 {% block body %}
@@ -54,12 +66,12 @@ padding-right: 0;
     </ul>
 
     <!--Slideshow starts here -->
-    <div class="container carousel-inner no-padding">
+    <div class="container carousel-inner ">
         <div class="carousel-item active">
             {% for i in product %}
             <div class="col-xs-3 col-sm-3 col-md-3">
-                <div class="card align-items-center" style="width: 18rem;">
-                    <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+                <div class="card align-items-center" style="width: 18rem;padding-left: 80px;">
+                    <img src='/media/{{i.image}}' class="card-img-top" alt="..." >
                 </div>
             </div>
             {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}

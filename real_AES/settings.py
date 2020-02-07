@@ -30,7 +30,7 @@ EMAIL_HOST_USER = 'iqrah.naseer@gmail.com'
 EMAIL_HOST_PASSWORD = 'naseerI$17'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 ALLOWED_HOSTS = []
 
@@ -128,6 +128,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
 
 # Managing media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
